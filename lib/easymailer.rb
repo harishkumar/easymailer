@@ -72,7 +72,7 @@ module Easymailer
 
   def self.email_controller
     "class EmailController < ApplicationController
-   require 'easy_mailer'
+   require 'easymailer'
   def send_email
     if request.post?
       unless params[:email][:to].nil? or params[:email][:to].blank?
@@ -88,10 +88,10 @@ module Easymailer
       File.open(path,'w+')
       File.open(path, 'wb') { |f| f.write(attachment.read) }
 
-      EasyMailer.send_mail(message,to_mail,subject,path,file_name).deliver
+      Easymailer.send_mail(message,to_mail,subject,path,file_name).deliver
       File.delete(path)
       else
-      EasyMailer.send_mail(message,to_mail,subject,nil,nil).deliver
+      Easymailer.send_mail(message,to_mail,subject,nil,nil).deliver
       end
       flash[:notice]='Email Sent Sucesssfully'
       else
