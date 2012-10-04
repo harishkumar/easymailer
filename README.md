@@ -77,6 +77,4 @@ Now the session will be of this new username and if you want to change sender us
 
 Only works for Rails3.2 or above applications..
 
-Link
-
-https://rubygems.org/gems/easymailer
+Link:  https://rubygems.org/gems/easymailer
