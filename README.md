@@ -21,7 +21,6 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
 step1 :
 gem install easymailer
 
@@ -53,7 +52,7 @@ and restart your Application!
 step5:
 Go to link http://localhost:3000/email/send_email or YourIP/email/send_email
 
-More Features
+##More Features
 you can use independently this gem APIs to sed mail and change configuration on the fly
 To send Email -
 Easymailer.send_mail(message,email,subject,attachment_path,attachment_file_name)
