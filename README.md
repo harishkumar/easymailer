@@ -21,20 +21,15 @@ Or install it yourself as:
 
 ## Usage
 
-step1 :
-gem install easymailer
+step1 : gem install easymailer
 
 step2 : place below line in your gem file
 
 gem 'easymailer', :git => 'git://github.com/harishkumar/easymailer.git'
 
-step3 :
+step3 : bundle install
 
-bundle install
-
-step4 : Run command
-
-rails g easymailer
+step4 : rails g easymailer
 
 step5:
 
