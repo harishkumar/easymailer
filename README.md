@@ -24,21 +24,26 @@ Or install it yourself as:
 step1 :
 gem install easymailer
 
-step2 : place below line in your gem file 
+step2 : place below line in your gem file
+
 gem 'easymailer', :git => 'git://github.com/harishkumar/easymailer.git'
 
 step3 :
+
 bundle install
 
 step4 : Run command
+
 rails g easymailer
 
 step5:
+
 Change the settings in config/initializers/setup_mail.rb
 (for Gmail change username and password) which is created auomatically.
 now start your Application!
 
 step6:
+
 Go to link http://localhost:3000/email/send_email or YourIP/email/send_email
 
 ##More Features
