@@ -17,7 +17,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install easymailer  or gem install easymailer -v=2.0.0
+    $ gem install easymailer  or gem install easymailer -v=2.1.0
 
 ## Usage
 
@@ -61,9 +61,9 @@ Easymailer.send_mail(message,email,subject,attachment_path,attachment_file_name)
 
 Now the session will be of this new username and if you want to change sender username then again use mail_settings Api or to use default settings restart your application.
 
-          
+
 ##Limitations
 
-Only works for Rails3.2 or above applications..
+Only works for Rails3.2 or above applications.. 
 
 Link:  https://rubygems.org/gems/easymailer
