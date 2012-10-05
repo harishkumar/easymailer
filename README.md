@@ -17,7 +17,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install easymailer
+    $ gem install easymailer  or gem install easymailer -v=2.0.0
 
 ## Usage
 
