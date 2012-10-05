@@ -1,0 +1,39 @@
+<%=form_for :email,:html => { :multipart => true } do |f|%>
+<table>
+<tr><th><h2>Send Email</h2></th></tr>
+<tr><td>Mail To</td><td><%=f.text_field :to%></td></tr>
+<tr><td>Subject</td><td><%=f.text_field :subject%></td></tr>
+<tr><td>Message</td><td><%=f.text_area :message,:rows=>7,:cols=>40%></td></tr>
+<tr><td>Attachment</td><td><%=f.file_field :file%></td></tr>
+<tr><td colspan='2'><%=f.submit 'Send email'%></td></tr>
+</table>
+<%end%>
+<div id='flash' style='display:none;'>Sending Mail Please Wait..</div>
+<%unless flash[:notice].nil?%>
+<div class='notice'><p><%=flash[:notice]%><%flash[:notice]=nil%></p></div>
+<%end%>
+
+<style type='text/css'>
+  #flash{
+    background:#ECC3C3;font-size:14px;
+    border: 1px solid #A9A9A9;
+    text-align:center;
+    width:800px;
+    margin:0px auto;
+}
+.notice{background:#99FF99;font-size:14px;
+    border: 1px solid #A9A9A9;
+    text-align:center;
+    width:800px;
+    margin:0px auto;
+}
+</style>
+
+<script type='text/javascript'>
+  $(document).ready(function(){
+  $('form').submit(function(){
+    $('#flash').css('display','block');
+    $('.notice').css('display','none');
+  });
+});
+</script>
